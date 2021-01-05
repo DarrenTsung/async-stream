@@ -40,7 +40,9 @@ async fn main() {
 }
 ```
 
-Streams may be returned by using `impl Stream<Item = T>`:
+The following examples require a Rust version >= 1.45 to allow [procedural macros in the statement position](https://github.com/rust-lang/rust/blob/master/RELEASES.md#version-1450-2020-07-16).
+
+Streams may be returned by using `impl Stream<Item = T>`: 
 
 ```rust
 use async_stream::stream;
